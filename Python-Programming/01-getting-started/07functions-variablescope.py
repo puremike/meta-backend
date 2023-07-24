@@ -55,5 +55,8 @@ def perimeterRectangle(l,b):
         print("The area of a rectangle of length {0} and breadth {1} = {2}m2".format(l,b, area))
 
     areaRectangle()
+    
+    #accessing and printing the global variable
+    print("Code Reports:", codeReports)
 
 perimeterRectangle(5,8)
