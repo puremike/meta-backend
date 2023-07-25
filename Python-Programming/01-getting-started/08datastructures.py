@@ -58,3 +58,68 @@ for x in myTuples:
 
 
 #SETS
+set1 = {1,1,2,3,4}
+print("set1:", set1)
+
+#add an element into a set
+set1.add(5)
+print("set1:", set1)
+
+#remove an element from a set
+set1.discard(5)
+print("set1: ", set1)
+
+#perform union of sets
+set2 = {3,4,6,6,7,8,8,9}
+set3 = set1.union(set2) #set3 = set1 | set2
+print("set3:", set3)
+
+#perform intersection of sets
+set3 = set1.intersection(set2) #set3 = set1 & set2
+print("set3:", set3)
+
+#perform difference of sets
+set3 = set1.difference(set2)
+print("set3:", set3) #set3 = set1 - set2
+
+#perform symmetric difference of sets
+set3 = set1.symmetric_difference(set2)
+print("set3:", set3) #set3 = set1 ^ set2
+
+for st in set3:
+    print("Set:", st)
+
+
+#DICTIONARY
+dict1 = {
+    1: "One", 2:"Two", 3:"Three", 4:"$four"
+}
+
+#print the value of the said key
+print(dict1[1])
+
+#update a dictionary using it key
+dict1[4] = "Four"
+print(dict1)
+
+#add a new key and value to a dict
+dict1[5] = "Five"
+print(dict1)
+
+#add a new key and value to a dict and remove it
+dict1[6] = "Six"
+print(dict1)
+dict1.pop(6) #remove a key-value from a dict
+print(dict1)
+
+#iterate through a dict and print keys and values
+for key, value in dict1.items():
+    print("{0} + {1}".format(key, value))
+
+#iterate and print keys only
+for key in dict1.keys():
+    print("Key:", key)
+
+#iterate and print values only
+for value in dict1.values():
+    print("Values:", value)
