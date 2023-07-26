@@ -20,7 +20,7 @@
 
 #FILE OPENING
 
-file = open("./Python-Programming/01-getting-started/text.txt", "r")
+file = open("./Python-Programming/text.txt", "r")
 data = file.readline() #reads only 1 line
 print(data)
 file.close()
@@ -28,7 +28,7 @@ file.close()
 print("\n")
 #using the - with open() which closes the file automatically. Also works better with exceptional handling
 try:
-    with open("./Python-Programming/01-getting-started/11exceptionalhandling.py", "r") as f:
+    with open("./Python-Programming/11exceptionalhandling.py", "r") as f:
         print(f.read()) #reads the entire file
 except Exception as e:
     print("Invalid directory or file;", e)
@@ -36,10 +36,10 @@ except Exception as e:
 #CREATING FILES
 
 print("\n")
-with open("./Python-Programming/01-getting-started/file.txt", "w") as f:
+with open("./Python-Programming/file.txt", "w") as f:
     f.write("Learning file handling - creating a single-line file")
 
 #write multiline with the writelines()
-with open("./Python-Programming/01-getting-started/hello.py", "w") as file:
+with open("./Python-Programming/hello.py", "w") as file:
     file.writelines(["x = 'michael'", "\nprint(x)", "\ny = 198", "\nprint(y ** 2)"])
 
