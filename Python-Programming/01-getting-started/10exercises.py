@@ -43,10 +43,17 @@ def checkPalindrome(str):
     reversedString = str[::-1].lower()
     if(reversedString == str.lower()):
         return True
-    else:
-        return False
+    return False
 print(checkPalindrome("AzA"))
 print(checkPalindrome("AZA"))
 print(checkPalindrome("aZA"))
 print(checkPalindrome("madam"))
 print(checkPalindrome("enoLA"))
+
+#Write a Python program to get a string made of the first 2 and last 2 characters of a given string. If the string length is less than 2, return the empty string instead.
+def string_both_ends(str):
+    if len(str) < 2:
+        return "String has less than 2 characters"
+    return str[:2] + str[-2:]
+print(string_both_ends("w3resource"))
+    

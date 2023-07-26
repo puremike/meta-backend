@@ -19,6 +19,7 @@ print(type(f) == str) #checking if the condition is true or false (string or no-
 #reverse a string
 nString = "enola"
 print("reversed string:", nString[::-1])
+print("reversed string:", "".join(reversed(nString)))
 
 #convert a string to upper and lowercase
 print("lower:", nString.lower())
@@ -43,4 +44,5 @@ print("trimmed string:", sString.strip())
 #join() to join an iterable to a string
 pString = ["michael12", "gmail.com"]
 print("@".join(pString))
+
 
