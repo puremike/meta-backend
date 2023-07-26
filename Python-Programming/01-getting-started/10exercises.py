@@ -56,4 +56,5 @@ def string_both_ends(str):
         return "String has less than 2 characters"
     return str[:2] + str[-2:]
 print(string_both_ends("w3resource"))
+print(string_both_ends("w"))
     
