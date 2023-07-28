@@ -46,6 +46,8 @@ print(mult(*num1))
 def factorial(num):
     count = 1
     for n in range(1, num + 1):
+        if n < 1:
+            return
         count *= n
     print("Factorial of {0} = {1}".format(num, count))
 

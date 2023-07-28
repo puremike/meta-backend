@@ -6,6 +6,8 @@
 def factorial(num):
     fact = 1
     for n in range(1, num + 1):
+        if n < 1:
+            return
         fact *= n
     return fact
 
