@@ -106,11 +106,11 @@ for x in mapped_coffee:
     print(x)
 
 print("\n")
+
 # using filter() - print interables that are true
-filtered_coffee = filter(find_coffee, menu)
-print(filtered_coffee)
-for x in filtered_coffee:
+for x in filter(find_coffee, menu):
     print(x)
+
 
 print("\n")
 
