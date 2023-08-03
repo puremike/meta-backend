@@ -1,0 +1,1 @@
+# Python primarily follows what is known as an object oriented paradigm or model. As you'll soon discover, object-oriented programming or OOP, relies heavily on simplicity and reusability to improve workflow.

@@ -5,9 +5,9 @@
 # A function to calculate factorial
 def factorial(num):
     fact = 1
+    if num < 1:
+        return
     for n in range(1, num + 1):
-        if n < 1:
-            return
         fact *= n
     return fact
 
