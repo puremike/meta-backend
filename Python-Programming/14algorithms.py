@@ -1,50 +1,51 @@
 import time
 
-# WRITING ALGORITHMS
+"""WRITING ALGORITHMS
 
-# An algorithm is a set of instructions that is completed in a step-by-step way to solve a particular problem.
+An algorithm is a set of instructions that is completed in a step-by-step way to solve a particular problem.
 
-# There are many different types of algorithms that have been designed to solve all kinds of different types of problems in computer science. When writing an algorithm, it can be solved in many different ways and each can have its own pros and cons.
+There are many different types of algorithms that have been designed to solve all kinds of different types of problems in computer science. When writing an algorithm, it can be solved in many different ways and each can have its own pros and cons.
 
-# Recursion
-# Recursion refers to a method or a function that will call itself. It is used to resolve problems by breaking the problem down into sub-problems. Let us take a look at some of the most popular types of recursive algorithms.
+Recursion
+Recursion refers to a method or a function that will call itself. It is used to resolve problems by breaking the problem down into sub-problems. Let us take a look at some of the most popular types of recursive algorithms.
 
-# Divide and conquer
-# This consists of two parts. The first is breaking the problem down into smaller sub-problems and the second is solving the final solution.
+Divide and conquer
+This consists of two parts. The first is breaking the problem down into smaller sub-problems and the second is solving the final solution.
 
-# Dynamic programming
-# This is mainly used for optimization problems. It is similar to the divide and conquer algorithm in that it splits the problems into sub-problems.
+Dynamic programming
+This is mainly used for optimization problems. It is similar to the divide and conquer algorithm in that it splits the problems into sub-problems.
 
-# Greedy algorithm
-# This one finds the best solution in each and every step instead of approaching optimization in a global way.
+Greedy algorithm
+This one finds the best solution in each and every step instead of approaching optimization in a global way."""
 
-# MAKE A COFFEE - SOLUTION
 
-# Input
-# Ingredients required:
+"""MAKE A COFFEE - SOLUTION
 
-# Cup
-# Hot water
-# Coffee granules
+Input
+Ingredients required:
 
-# Optional:
-# Milk
-# Cream
-# Sugar
+Cup
+Hot water
+Coffee granules
 
-# Output
-# A cup of coffee.
+Optional:
+Milk
+Cream
+Sugar
 
-# Steps
-# 1. Add drinking water to an electric kettle.
-# 2. Put the kettle on to boil water.
-# 3. While waiting, prepare coffee.
-# 4. Add coffee granules to the cup.
-# 5. If water is boiled, pour water into a cup, else continue to wait.
-# 6. If milk or cream is required, add and stir
-# 7. If sugar is required, add and stir.
-# 8. Return coffee.
+Output
+A cup of coffee.
 
+Steps
+1. Add drinking water to an electric kettle.
+2. Put the kettle on to boil water.
+3. While waiting, prepare coffee.
+4. Add coffee granules to the cup.
+5. If water is boiled, pour water into a cup, else continue to wait.
+6. If milk or cream is required, add and stir
+7. If sugar is required, add and stir.
+8. Return coffee.
+"""
 
 # ALGORITHMIC COMPLEXITY
 # Refactoring is a standard part of the software development cycle. Making code easier to manage, maybe straightforward, but what about making it faster or making it perform better? To determine how to make code faster or perform better, you must be able to measure it. Code is measured by TIME and SPACE. TIME is measured by how long it takes and SPACE is about how much memory it uses.
@@ -117,22 +118,22 @@ for x in range(10):
         print(x, y, end=" ")
 # it means the total iterations for the for loops is 10 * 10 = 100
 
+"""
+5, EXPONENTIAL TIME, which is an algorithm that doubles with each iteration. The Fibonacci sequence is a prime example of this.
 
-#  5, EXPONENTIAL TIME, which is an algorithm that doubles with each iteration. The Fibonacci sequence is a prime example of this.
-
-# def fibonacci(n):
-#     if n < 1:
-#         return n
-#     return fibonacci(n - 1) + fibonacci(n - 2)
+def fibonacci(n):
+     if n < 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)"""
 
 
-# BIG-0 NOTATION
-# Big-O notation is the most fundamental tool to measure the cost of an algorithm. It describes the complexity of the code using algebraic terms.
-# Function        Big O Notation
-# Constant        O(c)
-# Logarithmic     O(log(n))
-# Linear          O(n)
-# Quadratic       O(n^2)
-# Cubic           O(n^3)
-# Exponential     O(2^n)
-# Factorial       O(n!)
+"""BIG-0 NOTATION
+Big-O notation is the most fundamental tool to measure the cost of an algorithm. It describes the complexity of the code using algebraic terms.
+Function        Big O Notation
+Constant        O(c)
+Logarithmic     O(log(n))
+Linear          O(n)
+Quadratic       O(n^2)
+Cubic           O(n^3)
+Exponential     O(2^n)
+Factorial       O(n!)"""

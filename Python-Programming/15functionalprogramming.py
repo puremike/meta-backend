@@ -112,7 +112,16 @@ for x in filter(find_coffee, menu):
     print(x)
 
 
-print("\n")
+print("\nLAMBDA FUNCTION")
+
+mult = lambda x, y: x * y
+print(mult(2, 10))
+
+x = [1, 2, 3, 4, 5, 6]
+y = 3
+
+mult1 = lambda x, y: x * y
+print(mult1(x, y))  # return x (list) in three places
 
 # EXAMPLES
 data = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
