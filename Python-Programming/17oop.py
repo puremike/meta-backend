@@ -53,6 +53,23 @@ print("\nINSTANTIATE A CUSTOM OBJECT")
 """ "__init__" is a reserved method in python classes. It is known as a constructor in object oriented concepts. This method called when an object is created from the class and it allow the class to initialize the attributes of a class."""
 
 
+class MyName:
+    def __init__(self, first_name, last_name) -> None:
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def print_name(self, job):
+        print(job)
+        return "My name is {0} {1}".format(self.first_name, self.last_name)
+
+
+michael = MyName("Michael", "Egbinola")
+call_michael = michael.print_name("Cloud and Backend Engineer")
+print(call_michael)
+
+print("\n")
+
+
 class Recipe:
     # using the "__init__" constructor to allow the class initialize the attributes of a class
     def __init__(self, dish, items, time) -> None:
